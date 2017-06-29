@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Aplikasi Keren-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Parsing" customModuleProvider="target" sceneMemberID="viewController">
@@ -40,7 +40,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Zef-cS-7ew"/>
+                    <navigationItem key="navigationItem" title="Aplikasi Keren" id="Zef-cS-7ew">
+                        <barButtonItem key="backBarButtonItem" title="Kembali" id="TPp-RY-9O8"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tInput" destination="NpI-Da-kf5" id="lCx-Na-lg0"/>
                     </connections>
@@ -49,7 +51,7 @@
             </objects>
             <point key="canvasLocation" x="-16.800000000000001" y="308.9955022488756"/>
         </scene>
-        <!--View Controller2-->
+        <!--Detail-->
         <scene sceneID="zYM-89-rUs">
             <objects>
                 <viewController id="ZLY-iN-YaW" customClass="ViewController2" customModule="Parsing" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,6 +73,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Detail" id="z3U-Xq-LJ0"/>
                     <connections>
                         <outlet property="myLabel" destination="ojc-6f-LhY" id="Bq3-3i-1Tt"/>
                     </connections>
