@@ -9,10 +9,12 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import AlamofireImage
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var tInput: UITextField!
+    @IBOutlet weak var imgView: UIImageView!
     
     let url = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=9c04c6a25d15c5a8a20e1c0a16133557"
 
@@ -34,7 +36,11 @@ class ViewController: UIViewController {
             
             // baca data JSON
             let jsonData = JSON(response.result.value!)
-            print("Overview: \(jsonData["results"][1]["overview"])")
+            var poster = jsonData["results"][1]["poster_path"]
+            
+            var url = URL(string:"http://image.tmdb.org/t/p/w185/\(poster)")
+            
+            self.imgView.af_setImage(withURL: url!)
         }
     }
 
