@@ -7,6 +7,7 @@ target 'Parsing' do
 
   # Pods for Parsing
   pod 'Alamofire', '~> 4.4'
+  pod 'SwiftyJSON'
 
   target 'ParsingTests' do
     inherit! :search_paths
