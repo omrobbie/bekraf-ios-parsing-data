@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
@@ -34,4 +35,3 @@ class ViewController: UIViewController {
         tujuan.pesan = tInput.text!
     }
 }
-
