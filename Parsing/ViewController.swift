@@ -31,6 +31,10 @@ class ViewController: UIViewController {
         
         Alamofire.request(url).responseJSON {
             response in print("Result: \(response.result)")
+            
+            // baca data JSON
+            let jsonData = JSON(response.result.value!)
+            print("Total: \(jsonData["results"])")
         }
     }
 
