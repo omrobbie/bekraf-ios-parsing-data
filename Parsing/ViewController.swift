@@ -12,6 +12,8 @@ import Alamofire
 class ViewController: UIViewController {
 
     @IBOutlet weak var tInput: UITextField!
+    
+    let url = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=9c04c6a25d15c5a8a20e1c0a16133557"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,10 @@ class ViewController: UIViewController {
 
     @IBAction func onSend(_ sender: Any) {
         print(tInput.text!)
+        
+        Alamofire.request(url).responseJSON {
+            response in print("Result: \(response.result)")
+        }
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
