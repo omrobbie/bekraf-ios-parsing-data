@@ -10,10 +10,18 @@ import UIKit
 
 class ViewController2: UIViewController {
 
+    var pesan : String!
+    
+    @IBOutlet weak var myLabel : UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        myLabel.text = pesan
     }
 
     override func didReceiveMemoryWarning() {

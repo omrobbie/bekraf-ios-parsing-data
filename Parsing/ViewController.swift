@@ -26,5 +26,12 @@ class ViewController: UIViewController {
         print(tInput.text!)
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // tentukan tujuan
+        let tujuan = segue.destination as! ViewController2
+        
+        // refer ke variabel tujuan
+        tujuan.pesan = tInput.text!
+    }
 }
 

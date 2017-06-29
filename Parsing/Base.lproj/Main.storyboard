@@ -27,6 +27,7 @@
                                 <state key="normal" title="Kirim"/>
                                 <connections>
                                     <action selector="onSend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HwH-cy-59a"/>
+                                    <segue destination="ZLY-iN-YaW" kind="show" id="I7W-f3-EuG"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NpI-Da-kf5">
@@ -47,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="-956" y="309"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller2-->
         <scene sceneID="zYM-89-rUs">
             <objects>
-                <viewController id="ZLY-iN-YaW" sceneMemberID="viewController">
+                <viewController id="ZLY-iN-YaW" customClass="ViewController2" customModule="Parsing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FMo-Q7-Oa0"/>
                         <viewControllerLayoutGuide type="bottom" id="9O7-s4-Xg3"/>
@@ -58,12 +59,24 @@
                     <view key="view" contentMode="scaleToFill" id="MTl-02-jfL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojc-6f-LhY">
+                                <rect key="frame" x="37" y="54" width="300" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="myLabel" destination="ojc-6f-LhY" id="Bq3-3i-1Tt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KAW-jG-NtX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-270" y="309"/>
+            <point key="canvasLocation" x="-271.19999999999999" y="308.9955022488756"/>
         </scene>
     </scenes>
 </document>
