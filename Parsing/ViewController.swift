@@ -34,7 +34,7 @@ class ViewController: UIViewController {
             
             // baca data JSON
             let jsonData = JSON(response.result.value!)
-            print("Total: \(jsonData["results"])")
+            print("Overview: \(jsonData["results"][1]["overview"])")
         }
     }
 
