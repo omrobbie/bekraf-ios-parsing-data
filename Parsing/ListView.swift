@@ -84,6 +84,20 @@ class ListView: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedIndex = indexPath.row
+        performSegue(withIdentifier: "detailSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! ListDetail
+        
+        var data : Dictionary<String, Any>!
+        data = self.arrayData[selectedIndex] as! Dictionary<String, Any>
+        
+        vc.item = data
+    }
 
     /*
     // Override to support conditional editing of the table view.
