@@ -48,23 +48,42 @@ class ListView: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return arrayData.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListCell
 
         // Configure the cell...
+        
+        // ambil data di index tertentu
+        var item : Dictionary<String, Any>!
+        item = self.arrayData[indexPath.row] as! Dictionary<String, Any>
+        
+        // tampilkan title
+        cell.myTitle.text = item["original_title"] as? String
+        
+        // tampilkan image
+        let image = item["poster_path"] as! String
+        let imagePath = "http://image.tmdb.org/t/p/w185/\(image)"
+        
+        // konversi ke URL
+        let url = URL(string: imagePath)!
+        
+        // tampilkan image
+        cell.myImageView.af_setImage(withURL: url)
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 140
+    }
 
     /*
     // Override to support conditional editing of the table view.
