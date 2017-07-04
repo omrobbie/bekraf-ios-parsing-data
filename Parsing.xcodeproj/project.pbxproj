@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0138E321759AE2F696B39E67 /* Pods_ParsingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11857C628E081D266EE298B8 /* Pods_ParsingUITests.framework */; };
 		1B2439E4B71FA47D911E1E2A /* Pods_ParsingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE616FEA74FF4B8CD18D19C6 /* Pods_ParsingTests.framework */; };
+		24151C6C1F0BAAFD00C92A16 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24151C6B1F0BAAFD00C92A16 /* ListView.swift */; };
+		24151C6E1F0BABF000C92A16 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24151C6D1F0BABF000C92A16 /* ListCell.swift */; };
 		24DBFD021F0510B600552AA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DBFD011F0510B600552AA8 /* AppDelegate.swift */; };
 		24DBFD041F0510B600552AA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DBFD031F0510B600552AA8 /* ViewController.swift */; };
 		24DBFD071F0510B600552AA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DBFD051F0510B600552AA8 /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 		0449C56CD1D92120332C2A2A /* Pods_Parsing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parsing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11857C628E081D266EE298B8 /* Pods_ParsingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParsingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17504F4B5A93E016C1D31EDB /* Pods-Parsing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parsing.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parsing/Pods-Parsing.release.xcconfig"; sourceTree = "<group>"; };
+		24151C6B1F0BAAFD00C92A16 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		24151C6D1F0BABF000C92A16 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		24DBFCFE1F0510B600552AA8 /* Parsing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parsing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24DBFD011F0510B600552AA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24DBFD031F0510B600552AA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				24DBFD011F0510B600552AA8 /* AppDelegate.swift */,
 				24DBFD031F0510B600552AA8 /* ViewController.swift */,
 				24DBFD051F0510B600552AA8 /* Main.storyboard */,
+				24151C6D1F0BABF000C92A16 /* ListCell.swift */,
+				24151C6B1F0BAAFD00C92A16 /* ListView.swift */,
 				24DBFD2F1F0512B500552AA8 /* ViewController2.swift */,
 				24DBFD081F0510B600552AA8 /* Assets.xcassets */,
 				24DBFD0A1F0510B600552AA8 /* LaunchScreen.storyboard */,
@@ -449,8 +455,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24151C6C1F0BAAFD00C92A16 /* ListView.swift in Sources */,
 				24DBFD041F0510B600552AA8 /* ViewController.swift in Sources */,
 				24DBFD021F0510B600552AA8 /* AppDelegate.swift in Sources */,
+				24151C6E1F0BABF000C92A16 /* ListCell.swift in Sources */,
 				24DBFD301F0512B500552AA8 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -702,6 +710,7 @@
 				24DBFD281F0510B700552AA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24DBFD291F0510B700552AA8 /* Build configuration list for PBXNativeTarget "ParsingTests" */ = {
 			isa = XCConfigurationList;
@@ -710,6 +719,7 @@
 				24DBFD2B1F0510B700552AA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24DBFD2C1F0510B700552AA8 /* Build configuration list for PBXNativeTarget "ParsingUITests" */ = {
 			isa = XCConfigurationList;
@@ -718,6 +728,7 @@
 				24DBFD2E1F0510B700552AA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
