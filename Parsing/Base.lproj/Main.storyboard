@@ -198,7 +198,7 @@
             </objects>
             <point key="canvasLocation" x="1556" y="-367"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Profile-->
         <scene sceneID="lSG-sw-JjM">
             <objects>
                 <viewController id="gdR-DN-bwF" customClass="ProfileViewController" customModule="Parsing" customModuleProvider="target" sceneMemberID="viewController">
@@ -236,7 +236,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="8v9-dI-qM5">
+                    <navigationItem key="navigationItem" title="Profile" id="8v9-dI-qM5">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="0rq-Lr-fgg">
                             <connections>
                                 <action selector="btnSave:" destination="gdR-DN-bwF" id="etR-zR-W2q"/>
@@ -295,9 +295,14 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rUd-eS-h8c" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="ic_face" selectedImage="ic_face_black_24dp" id="cmI-9a-AjS"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wk9-7C-GNf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Wk9-7C-GNf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.79971892417767076" green="0.23859225775709278" blue="0.81405845207253891" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.46626607806945553" green="0.71881557885375635" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.62159974093264247" green="0.22424905627619085" blue="0.19436924792664317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
