@@ -68,6 +68,10 @@ class ListView: UITableViewController {
         // tampilkan title
         cell.myTitle.text = item["original_title"] as? String
         
+        // tampilkan rate
+        let rate = item["vote_average"]!
+        cell.myRate.text = "Rate: \(rate)"
+        
         // tampilkan image
         let image = item["poster_path"] as! String
         let imagePath = "http://image.tmdb.org/t/p/w185/\(image)"
